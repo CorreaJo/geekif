@@ -175,3 +175,14 @@ footer {
     text-shadow: 1px 1px 5px grey;
 }
 /* ---------- --------- */
+
+/* ------- Parte do Madre------- */
+
+#banners img {
+    display: block;
+    width: 1400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* ---------- ---------- */
