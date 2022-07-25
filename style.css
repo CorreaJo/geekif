@@ -22,13 +22,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-/*body{
+body{
     
-    background-image: url(src/imagens/background.jpg);
-    background-size: cover;
+    background-image: url(src/imagens/background_test/background.png);
+    background-size:auto;
+    background-position: center;
     backdrop-filter: blur(10px);
-    
-}*/
+    backdrop-filter: brightness(40%);
+}
 /* ---------- ---------- */
 
 /* ---------- ---------- */
@@ -39,17 +40,21 @@
 /* ---------- ---------- */
 
 /* ---------- Parte do João Pedro ---------- */
+
 .Topo{
     background-color: black;
+    max-width: auto;
+    height: auto;
+    box-shadow: 0 5px 10px #17171794;
 }
 .Topo img{
-    height: 50px;
+    height: 2.75vw;
+    
 }
 
 .cabecalho{
     justify-content: space-between;
     display: flex;
-    max-width: auto;
     padding: 20px;
 }
 .redes_sociais{
@@ -73,12 +78,14 @@
     text-decoration: none;
     color: var(--roxo);
     font-family: 'Pixelada';
-    font-size: 20px;
+    font-size: 1.5vw;
     transition: 0.3s;
+    letter-spacing: 1px;
 }
 .Barra_Utilidades a:hover{
     text-decoration:underline;
     color: var(--verde);
+    text-shadow: 0 0 10px #66ff59;
 }
 /* ---------- ---------- */
 
@@ -87,8 +94,9 @@
     text-align: center;
     color: var(--ciano);
     text-shadow: 3px 1px 3px var(--preto);
-    font-size: 2em;
+    font-size: 3vw;
     font-family: 'Pixelada';
+    letter-spacing: 3px;
 }
 
 #copy {
@@ -109,11 +117,14 @@ footer {
 
 /* ------- Parte do Gab ------- */
 #atracoes{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    padding: 40px 0px;
+    background-color: #17171798;
+    box-shadow: 0px 0px 50px #171717;
+    margin: 30px 0px 10px 0px;
+    border-radius: 10px;
 }
 #atracoes > .flip{
     margin: 20px 0;
@@ -180,6 +191,7 @@ footer {
     color: white;
     margin:0 15%;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .flip h2{
