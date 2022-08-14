@@ -4,8 +4,8 @@ USE geekif;
 
 CREATE TABLE atracao (
     atracao_id INT NOT NULL AUTO_INCREMENT,
-    nome VARCHAR() NOT NULL,
-    imagem MEDIUMBLOB NULL,
+    nome VARCHAR(200) NOT NULL,
     descricao TEXT NULL,
+    imagem MEDIUMBLOB NULL,
     PRIMARY KEY(atracao_id)
 );

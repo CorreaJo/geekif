@@ -10,7 +10,9 @@
     <link rel="shortcut icon" type="imagem/x-icon" href="src/imagens/favicon64.ico"/>	
 </head>
 <body>
-    <?php require "crud.php"; ?>
+<?php require "crud.php"; 
+    
+?>
     <header>
         <div class="Topo">
             <div class="cabecalho">
@@ -106,12 +108,28 @@
 
 	<div id="sub_atracoes"><h2 class="sub-titulo">ATRAÇÕES</h2></div>
     <section id="atracoes">
-        
+<?php
+    $row = readAtracao();
+    while($row): ?>
         <div class="flip">
             <div class="flip-inner">
                 <div class="flip-front">
+					<img src = "<?=base64_decode($row['imagem'])?>">
+                </div>
+                <div class="flip-back">
+                    <div class="bg-image"></div>
+                    <div class="atr-text">
+                        <h2><?=$row['nome']?></h2>
+                        <p><?=$row['descricao']?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<?php endwhile; ?>
+        <!--<div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
 					<img src = "src/imagens/kungfu-frente.jpg">
-                    
                 </div>
                 <div class="flip-back">
                     <div class="bg-image"></div>
@@ -234,7 +252,8 @@
                     </div>
                 </div>
             </div>
-        </div><div class="flip">
+        </div>
+        <div class="flip">
             <div class="flip-inner">
                 <div class="flip-front">
                     <h2>Em Breve</h2>
@@ -247,7 +266,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </section>
 
     <section>
